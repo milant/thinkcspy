@@ -50,6 +50,16 @@ of from the left.
 
      alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
      print(alist[5])
+     
+     ====
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+       def testOne(self):
+           self.assertEqual(alist[5],[],"A feedback string when the test fails")
+
+   myTests().main()
 
    
 .. mchoice:: test_question9_3_2
